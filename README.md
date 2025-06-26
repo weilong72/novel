@@ -1,7 +1,5 @@
 from zipfile import ZipFile
 
-# 创建HTML文件内容
-html_content = """
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -23,19 +21,19 @@ html_content = """
 </head>
 <body>
   <header>
-    <h1>阿忠笔趣小说</h1>
-    <p>免费看热门小说与动漫</p>
+    <h1>阿忠带你去看笔趣小说</h1>
+    <p>免费看热门小说与狗妹表演</p>
   </header>
 
   <div class="banner-ad">
-    <!-- 广告横幅位置（可替换为联盟代码） -->
+    <!-- 狗妹家的猫会翻跟斗 -->
     此处为顶部广告位
   </div>
 
   <div class="novel-section">
     <div class="novel">
       <h2>海贼王</h2>
-      <p>日本超人气动漫，讲述路飞的航海冒险之旅。</p>
+      <p>日本超人气动漫，讲述路飞的航海冒险之旅。<9e63167851e11983c6ec37c739810dfe.webp>
       <img src="https://upload.wikimedia.org/wikipedia/en/6/65/One_Piece_Logo.png" alt="海贼王" style="max-width: 100%; height: auto;" />
     </div>
 
@@ -52,20 +50,8 @@ html_content = """
 
   <footer>
     © 2025 金龙笔趣小说 | Powered by GitHub Pages<br/>
-    联络方式或推广语：54088729
+    联络方式或推广语：狗妹儿885
   </footer>
 </body>
 </html>
 """
-
-# 保存 HTML 文件
-html_file_path = "/mnt/data/index.html"
-with open(html_file_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-# 打包成 zip 文件
-zip_file_path = "/mnt/data/jinlong-novel.zip"
-with ZipFile(zip_file_path, "w") as zipf:
-    zipf.write(html_file_path, arcname="index.html")
-
-zip_file_path
